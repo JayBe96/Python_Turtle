@@ -1,0 +1,33 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+env/
+venv/
+.env/
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+*.swp
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+*.cache
+
+# Ignore compiled libraries
+*.so
+*.dll
+*.dylib
+
+# Ignore test result files
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore coverage reports
+htmlcov/
