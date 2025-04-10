@@ -11,12 +11,21 @@ writer = turtle.Turtle()
 writer.speed(1)  # Set the writing speed
 
 # Function to write text
-def write_text(text, x, y, color, size):
-    writer.penup()  # Don't draw when moving to start position
-    writer.goto(x, y)  # Move to the specified position
-    writer.pendown()  # Start drawing
-    writer.color(color)  # Set text color
-    writer.write(text, font=("Arial", size, "normal"))  # Write text
+def write_text(text:str, x:float, y:float, color:str, size:int):
+    """
+    Writes text on the screen at a specified position with a given color and size.
+    Parameters:
+        text (str): The text to be written.
+        x (float): The x-coordinate of the text's position.
+        y (float): The y-coordinate of the text's position.
+        color (str): The color of the text (e.g., "red", "blue").
+        size (int): The font size of the text.
+    """
+    writer.penup()  
+    writer.goto(x, y)  
+    writer.pendown()  
+    writer.color(color)  
+    writer.write(text, font=("Arial", size, "normal"))  
 
 
 write_text("Shaco", -50, 0, "cyan", 36)

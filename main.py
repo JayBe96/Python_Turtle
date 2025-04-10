@@ -3,7 +3,7 @@ import text
 
 
 def main():  
-    # Draw text
+    # Draws from text.py
     text.draw_text()
 
     
